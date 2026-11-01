@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineBook – Smart Movie & Book Recommendation System</title>
+  <meta name="description" content="CineBook is a rule-based expert system that recommends movies and books based on your preferences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E🎬%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/movie-quiz.css">
+  <link rel="stylesheet" href="css/book-quiz.css">
+  <link rel="stylesheet" href="css/results.css">
+  <link rel="stylesheet" href="css/favourites.css">
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">Cine<span>Book</span></a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#movies">Movies</a>
+      <a href="#books">Books</a>
+      <a href="#favourites">Favourites <span class="badge" id="favCount">0</span></a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HOME ============ -->
+    <section class="hero" id="home" data-section>
+      <div class="hero-glow glow-1"></div>
+      <div class="hero-glow glow-2"></div>
+      <div class="hero-inner">
+        <p class="eyebrow reveal">Rule-Based Expert System</p>
+        <h1 class="reveal">Find your next <span class="grad-movie">movie</span><br>and your next <span class="grad-book">book</span>.</h1>
+        <p class="hero-sub reveal">Answer a few simple questions. CineBook applies expert IF–THEN rules to match your mood and taste, and tells you <em>why</em> each pick was chosen.</p>
+        <div class="hero-actions reveal">
+          <a href="#movies" class="btn btn-movie">🎬 Explore Movies</a>
+          <a href="#books" class="btn btn-book">📚 Explore Books</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div><strong>2</strong><span>Recommenders</span></div>
+          <div><strong>IF–THEN</strong><span>Expert Rules</span></div>
+          <div><strong>100%</strong><span>Explainable</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MOVIES ============ -->
+    <section class="movies" id="movies" data-section>
+      <div class="container">
+        <p class="eyebrow">Cinema Corner</p>
+        <h2 class="reveal">Movies, picked by rules — not luck.</h2>
+        <p class="section-sub reveal">Tell us your mood, genre, language and runtime. Our inference engine will match films from the knowledge base and rank them by priority.</p>
+
+        <div class="card-grid">
+          <article class="card movie-card reveal">
+            <div class="card-icon">🎭</div>
+            <h3>Mood-based</h3>
+            <p>Feeling thrilled, romantic or in need of a laugh? Your mood drives the first rule.</p>
+          </article>
+          <article class="card movie-card reveal">
+            <div class="card-icon">🎞️</div>
+            <h3>Genre &amp; Era</h3>
+            <p>Sci-fi, drama, action, comedy — from timeless classics to the latest releases.</p>
+          </article>
+          <article class="card movie-card reveal">
+            <div class="card-icon">⏱️</div>
+            <h3>Runtime &amp; Language</h3>
+            <p>Short on time? Prefer a certain language? Rules filter exactly what fits.</p>
+          </article>
+        </div>
+
+        <button class="btn btn-movie btn-lg reveal" id="startMovieQuiz" aria-controls="movieQuiz">Start Movie Quiz</button>
+
+        <!-- Movie questionnaire: built by js/movie-quiz.js -->
+        <div class="mq" id="movieQuiz" hidden></div>
+
+        <!-- Movie knowledge base preview: built by js/movie-shelf.js -->
+        <div class="shelf" id="movieShelf" hidden>
+          <h3 class="shelf-title">Inside the Movie Knowledge Base</h3>
+          <p class="shelf-sub" id="shelfSub"></p>
+          <div class="shelf-track" id="shelfTrack"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BOOKS ============ -->
+    <section class="books" id="books" data-section>
+      <div class="container">
+        <p class="eyebrow">Reading Room</p>
+        <h2 class="reveal">Books that match the way you read.</h2>
+        <p class="section-sub reveal">From gripping thrillers to gentle self-help, share your reading taste and let the expert system suggest your next page-turner.</p>
+
+        <div class="card-grid">
+          <article class="card book-card reveal">
+            <div class="card-icon">📖</div>
+            <h3>Genre Match</h3>
+            <p>Fiction, mystery, fantasy, biography, self-help and more.</p>
+          </article>
+          <article class="card book-card reveal">
+            <div class="card-icon">🪶</div>
+            <h3>Reading Style</h3>
+            <p>Quick reads or deep dives — the rules respect your pace and page count.</p>
+          </article>
+          <article class="card book-card reveal">
+            <div class="card-icon">✨</div>
+            <h3>Theme &amp; Mood</h3>
+            <p>Inspiring, dark, uplifting or thoughtful — pick the feeling you want.</p>
+          </article>
+        </div>
+
+        <button class="btn btn-book btn-lg reveal" id="startBookQuiz" aria-controls="bookQuiz">Start Book Quiz</button>
+
+        <!-- Book questionnaire: built by js/book-quiz.js -->
+        <div class="mq mq-book" id="bookQuiz" hidden></div>
+
+        <!-- Book knowledge base preview: built by js/book-shelf.js -->
+        <div class="shelf shelf-book" id="bookShelf" hidden>
+          <h3 class="shelf-title">Browse the Book Knowledge Base</h3>
+          <p class="shelf-sub" id="bookShelfSub"></p>
+          <div class="shelf-track" id="bookShelfTrack"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAVOURITES ============ -->
+    <section class="favourites" id="favourites" data-section>
+      <div class="container">
+        <p class="eyebrow">Your Collection</p>
+        <h2 class="reveal">Favourites</h2>
+        <p class="section-sub reveal">Tap the ♡ on any movie or book to save it here. Your favourites are stored in this browser, so they are still here after you refresh or come back later.</p>
+        <p class="fav-note" id="favNote" role="status" hidden></p>
+
+        <!-- Built and updated by js/favourites-page.js -->
+        <div class="fav-app" id="favApp">
+          <div class="fav-toolbar" id="favToolbar" hidden>
+            <div class="fav-row">
+              <label class="fav-search">
+                <span class="sr-only">Search favourites</span>
+                <input type="search" id="favSearch" placeholder="Search by title, author or genre…" autocomplete="off">
+              </label>
+              <div class="fav-seg" id="favType" role="group" aria-label="Show">
+                <button type="button" data-type="all" class="active" aria-pressed="true">All</button>
+                <button type="button" data-type="movie" aria-pressed="false">🎬 Movies</button>
+                <button type="button" data-type="book" aria-pressed="false">📚 Books</button>
+              </div>
+            </div>
+            <div class="fav-row">
+              <select id="favGenre" aria-label="Filter by genre"><option value="">All genres</option></select>
+              <select id="favSort" aria-label="Sort favourites">
+                <option value="recent">Recently added</option>
+                <option value="az">Title A–Z</option>
+                <option value="year">Year (newest first)</option>
+              </select>
+              <button type="button" class="fav-clear" id="favClear">🗑 Clear all</button>
+            </div>
+            <p class="fav-status" id="favStatus" aria-live="polite"></p>
+          </div>
+
+          <div class="empty-state" id="favEmpty" hidden></div>
+
+          <section class="fav-panel fav-movies" id="favMovies" aria-labelledby="favMoviesTitle" hidden>
+            <h3 id="favMoviesTitle">🎬 Movies</h3>
+            <div class="fav-grid" id="favMoviesGrid"></div>
+          </section>
+          <section class="fav-panel fav-books" id="favBooks" aria-labelledby="favBooksTitle" hidden>
+            <h3 id="favBooksTitle">📚 Books</h3>
+            <div class="fav-grid" id="favBooksGrid"></div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about" data-section>
+      <div class="container">
+        <p class="eyebrow">About the Project</p>
+        <h2 class="reveal">How CineBook thinks</h2>
+        <p class="section-sub reveal">CineBook is a college AI mini-project. It is a genuine <strong>rule-based expert system</strong> — not machine learning.</p>
+
+        <div class="card-grid four">
+          <article class="card about-card reveal"><span class="step">1</span><h3>Knowledge Base</h3><p>JSON datasets of movies and books with their attributes.</p></article>
+          <article class="card about-card reveal"><span class="step">2</span><h3>IF–THEN Rules</h3><p>Expert rules such as "IF mood is happy THEN prefer comedy".</p></article>
+          <article class="card about-card reveal"><span class="step">3</span><h3>Inference Engine</h3><p>Checks your answers against the rules and scores each item by priority.</p></article>
+          <article class="card about-card reveal"><span class="step">4</span><h3>Explanation</h3><p>Every recommendation shows exactly which rules fired.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> CineBook · Built with HTML, CSS &amp; JavaScript · AI Mini-Project</p>
+  </footer>
+
+  <dialog class="confirm" id="confirmDialog" aria-labelledby="confirmTitle">
+    <form method="dialog">
+      <h3 id="confirmTitle">Clear all favourites?</h3>
+      <p id="confirmText"></p>
+      <div class="confirm-actions">
+        <button type="submit" value="cancel" class="btn btn-ghost">Cancel</button>
+        <button type="submit" value="ok" class="btn btn-movie">Yes, clear all</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <!-- shared building blocks -->
+  <script src="js/dataset.js"></script>
+  <script src="js/quiz-engine.js"></script>
+  <script src="js/favourites.js"></script>
+  <script src="js/shelf.js"></script>
+  <script src="js/inference-engine.js"></script>
+  <script src="js/results-view.js"></script>
+  <!-- movie module: knowledge base, rule base, results, questionnaire -->
+  <script src="js/movie-data.js"></script>
+  <script src="js/movie-rules.js"></script>
+  <script src="js/movie-shelf.js"></script>
+  <script src="js/movie-results.js"></script>
+  <script src="js/movie-quiz.js"></script>
+  <!-- book module -->
+  <script src="js/book-data.js"></script>
+  <script src="js/book-rules.js"></script>
+  <script src="js/book-shelf.js"></script>
+  <script src="js/book-results.js"></script>
+  <script src="js/book-quiz.js"></script>
+  <!-- favourites page -->
+  <script src="js/favourites-page.js"></script>
+</body>
+</html>

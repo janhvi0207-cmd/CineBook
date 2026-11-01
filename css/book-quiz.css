@@ -1,0 +1,114 @@
+/* CineBook – Stage 3: book questionnaire + book shelf (warm "digital reading library" style).
+   It reuses the structure classes from movie-quiz.css and only re-colours them inside .mq-book / .shelf-book,
+   so the dark movie module is not affected. */
+
+/* ============ QUIZ SHELL ============ */
+.mq-book, .shelf-book { --muted: #8a6f58; }
+.mq-book {
+  --paper: #fffaf0;
+  --paper-2: #f6e9cf;
+  --line: #e4d3b2;
+  --muted: #8a6f58;
+  position: relative; overflow: hidden; color: var(--ink);
+  padding-left: clamp(30px, 5vw, 54px); /* room for the book "spine" */
+  background:
+    repeating-linear-gradient(180deg, transparent 0 31px, rgba(181,83,47,.07) 31px 32px),
+    radial-gradient(ellipse at top right, rgba(245,185,66,.22), transparent 55%),
+    linear-gradient(160deg, var(--paper), var(--paper-2));
+  border: 1px solid var(--line);
+  box-shadow: 0 24px 60px rgba(74,47,29,.2);
+}
+.mq-book::before { /* leather spine with gold bands */
+  content: ""; position: absolute; inset: 0 auto 0 0; width: clamp(14px, 2.4vw, 22px);
+  background:
+    linear-gradient(180deg, transparent 12%, var(--gold) 12% 13%, transparent 13% 87%, var(--gold) 87% 88%, transparent 88%),
+    linear-gradient(90deg, #3a2314, var(--brown) 60%, #6b4429);
+}
+
+.mq-book .mq-head h3 { color: var(--brown); }
+.mq-book .mq-link { color: var(--terracotta); }
+.mq-book .mq-link:hover { background: rgba(181,83,47,.12); }
+
+/* ---- Progress ---- */
+.mq-book .mq-bar { background: rgba(74,47,29,.12); }
+.mq-book .mq-bar-fill { background: linear-gradient(90deg, var(--gold), var(--terracotta)); }
+.mq-book .mq-dot { color: var(--muted); }
+.mq-book .mq-dot-num { border-color: #cdb892; }
+.mq-book .mq-dot.active { color: var(--brown); font-weight: 600; }
+.mq-book .mq-dot.active .mq-dot-num { border-color: var(--terracotta); background: var(--terracotta); color: #fff; box-shadow: 0 0 0 5px rgba(181,83,47,.2); }
+.mq-book .mq-dot.done { color: var(--brown); }
+.mq-book .mq-dot.done .mq-dot-num { border-color: var(--gold); background: var(--gold); color: var(--ink); }
+.mq-book .mq-step-text { color: var(--terracotta); }
+
+/* ---- Questions ---- */
+.mq-book .mq-q { color: var(--brown); font-family: var(--font-head); font-weight: 700; }
+.mq-book .mq-hint { color: var(--muted); }
+
+/* ---- Selectable options ---- */
+.mq-book .opt { color: var(--ink); background: #fff; border-color: var(--line); box-shadow: 0 3px 10px rgba(74,47,29,.07); }
+.mq-book .opt:hover { background: #fffdf7; border-color: var(--gold); box-shadow: 0 10px 24px rgba(181,83,47,.16); }
+.mq-book .opt:focus-visible { outline-color: var(--terracotta); }
+.mq-book .opt.selected {
+  border-color: var(--terracotta);
+  background: linear-gradient(145deg, #fff3d6, #ffe3b0);
+  box-shadow: 0 10px 28px rgba(181,83,47,.28);
+}
+.mq-book .opt-check { background: var(--terracotta); }
+.mq-book .opt-desc { color: var(--muted); }
+.mq-book .opt.selected .opt-desc { color: var(--brown); }
+.mq-book .genre-opt { background: linear-gradient(160deg, hsl(var(--hue) 85% 95%), #fff); }
+.mq-book .genre-opt.selected { background: linear-gradient(145deg, #fff3d6, #ffe3b0); }
+
+/* Reading level + book type: three tall cards */
+.pick-grid { grid-template-columns: repeat(3, 1fr); }
+.pick-opt {
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  padding: 30px 18px; text-align: center; min-height: 190px; justify-content: center;
+}
+.pick-opt .opt-icon { font-size: 2.6rem; transition: transform .3s; }
+.pick-opt:hover .opt-icon, .pick-opt.selected .opt-icon { transform: scale(1.2) rotate(-5deg); }
+.pick-opt .opt-label { font-family: var(--font-head); font-size: 1.2rem; color: var(--brown); }
+
+/* ---- Errors / nav / notes ---- */
+.mq-book .mq-error { color: #b3261e; }
+.mq-book .btn-ghost { background: rgba(74,47,29,.06); color: var(--brown); border-color: rgba(74,47,29,.25); }
+.mq-book .btn-ghost:hover { background: rgba(74,47,29,.13); }
+.mq-book .mq-note { color: var(--muted); }
+.mq-book .mq-note.warn { color: #9a5b00; }
+
+/* ---- Review ---- */
+.mq-book .review-row { background: #fff; border-color: var(--line); }
+.mq-book .review-name { color: var(--muted); }
+.mq-book .tag { background: #ffe9c2; border-color: var(--gold); color: var(--brown); }
+.mq-book .tag.alt { background: #f9dcc9; border-color: var(--terracotta); }
+
+/* ---- Result ---- */
+.mq-book .mq-result h3 { color: var(--brown); }
+.mq-book .mq-result-sub { color: var(--muted); }
+.mq-book .mq-done { box-shadow: 0 0 0 10px rgba(245,185,66,.25); }
+.mq-book .summary-card { background: #fff; border-color: var(--line); }
+.mq-book .summary-k { color: var(--terracotta); }
+.mq-book .summary-v { color: var(--brown); }
+.mq-book .mq-info { background: rgba(245,185,66,.18); border-color: var(--terracotta); }
+.mq-book .mq-info strong { color: var(--brown); }
+.mq-book .mq-info p { color: #5c4331; }
+.mq-book .mq-json { color: var(--muted); }
+.mq-book .mq-json pre { background: #2a1c12; color: #f3d9a4; }
+
+/* ============ BOOK SHELF ============ */
+.shelf-book .shelf-sub { color: var(--muted); }
+.shelf-book .poster-frame { background: var(--cream-2); border-color: var(--line); box-shadow: 0 10px 24px rgba(74,47,29,.25); }
+.shelf-book .poster-frame img { object-fit: cover; }
+.shelf-book .shelf-meta h4 { color: var(--brown); }
+.shelf-book .shelf-meta p { color: var(--muted); }
+.shelf-book .shelf-track { scrollbar-color: var(--terracotta) transparent; }
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 640px) {
+  .pick-grid { grid-template-columns: 1fr; }
+  .pick-opt { min-height: 0; padding: 20px 16px; }
+  .mq-book .genre-opt { min-height: 108px; }
+}
+
+/* Cover frames inside the book quiz (results cards) use the warm placeholder colour while an image loads. */
+.mq-book .poster-frame { background: var(--cream-2); border-color: var(--line); box-shadow: 0 10px 24px rgba(74,47,29,.25); }

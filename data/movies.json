@@ -1,0 +1,836 @@
+{
+  "version": 1,
+  "movies": [
+    {
+      "id": "m01",
+      "title": "The Shawshank Redemption",
+      "genres": [
+        "Drama"
+      ],
+      "language": "English",
+      "year": 1994,
+      "duration": 142,
+      "moods": [
+        "emotional",
+        "thoughtful"
+      ],
+      "description": "A banker sentenced to life in prison forms a lasting friendship and quietly plans his escape.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/8/81/ShawshankRedemptionMoviePoster.jpg/330px-ShawshankRedemptionMoviePoster.jpg"
+    },
+    {
+      "id": "m02",
+      "title": "The Dark Knight",
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
+      "language": "English",
+      "year": 2008,
+      "duration": 152,
+      "moods": [
+        "exciting",
+        "suspenseful"
+      ],
+      "description": "Batman faces the Joker, a criminal mastermind who pushes Gotham City into chaos.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/The_Dark_Knight_%282008_film%29.jpg/330px-The_Dark_Knight_%282008_film%29.jpg"
+    },
+    {
+      "id": "m03",
+      "title": "Inception",
+      "genres": [
+        "Science Fiction",
+        "Thriller",
+        "Action"
+      ],
+      "language": "English",
+      "year": 2010,
+      "duration": 148,
+      "moods": [
+        "thoughtful",
+        "exciting"
+      ],
+      "description": "A thief who steals secrets through dreams is hired to plant an idea in a target's mind.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Inception_%282010%29_theatrical_poster.jpg/330px-Inception_%282010%29_theatrical_poster.jpg"
+    },
+    {
+      "id": "m04",
+      "title": "Interstellar",
+      "genres": [
+        "Science Fiction",
+        "Drama",
+        "Adventure"
+      ],
+      "language": "English",
+      "year": 2014,
+      "duration": 169,
+      "moods": [
+        "thoughtful",
+        "emotional"
+      ],
+      "description": "Explorers travel through a wormhole in search of a new home for humanity.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Interstellar_film_poster.jpg/330px-Interstellar_film_poster.jpg"
+    },
+    {
+      "id": "m05",
+      "title": "The Godfather",
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "language": "English",
+      "year": 1972,
+      "duration": 175,
+      "moods": [
+        "suspenseful",
+        "thoughtful"
+      ],
+      "description": "The ageing head of a crime family hands control to his reluctant youngest son.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/Godfather_ver1.jpg/330px-Godfather_ver1.jpg"
+    },
+    {
+      "id": "m06",
+      "title": "Jurassic Park",
+      "genres": [
+        "Adventure",
+        "Science Fiction"
+      ],
+      "language": "English",
+      "year": 1993,
+      "duration": 127,
+      "moods": [
+        "exciting"
+      ],
+      "description": "A theme park of cloned dinosaurs turns deadly when its security systems fail.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Jurassic_Park_poster.jpg/330px-Jurassic_Park_poster.jpg"
+    },
+    {
+      "id": "m07",
+      "title": "Toy Story",
+      "genres": [
+        "Animation",
+        "Comedy",
+        "Adventure"
+      ],
+      "language": "English",
+      "year": 1995,
+      "duration": 81,
+      "moods": [
+        "happy",
+        "emotional"
+      ],
+      "description": "A cowboy doll feels threatened when a flashy space ranger toy becomes his owner's favourite.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Toy_Story.jpg/330px-Toy_Story.jpg"
+    },
+    {
+      "id": "m08",
+      "title": "The Lion King",
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Drama"
+      ],
+      "language": "English",
+      "year": 1994,
+      "duration": 88,
+      "moods": [
+        "emotional",
+        "exciting"
+      ],
+      "description": "A young lion prince flees his kingdom after his father's death, then returns to claim his place.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3d/The_Lion_King_poster.jpg/330px-The_Lion_King_poster.jpg"
+    },
+    {
+      "id": "m09",
+      "title": "Spirited Away",
+      "genres": [
+        "Animation",
+        "Fantasy",
+        "Adventure"
+      ],
+      "language": "Japanese",
+      "year": 2001,
+      "duration": 124,
+      "moods": [
+        "exciting",
+        "thoughtful"
+      ],
+      "description": "A girl wanders into a world of spirits and must work in a bathhouse to free her parents.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Spirited_Away_Japanese_poster.png/330px-Spirited_Away_Japanese_poster.png"
+    },
+    {
+      "id": "m10",
+      "title": "Princess Mononoke",
+      "genres": [
+        "Animation",
+        "Fantasy",
+        "Adventure"
+      ],
+      "language": "Japanese",
+      "year": 1997,
+      "duration": 133,
+      "moods": [
+        "exciting",
+        "thoughtful"
+      ],
+      "description": "A young prince is drawn into the war between forest gods and an iron-mining town.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/Princess_Mononoke_Japanese_poster.png/330px-Princess_Mononoke_Japanese_poster.png"
+    },
+    {
+      "id": "m11",
+      "title": "Your Name.",
+      "genres": [
+        "Animation",
+        "Romance",
+        "Fantasy"
+      ],
+      "language": "Japanese",
+      "year": 2016,
+      "duration": 107,
+      "moods": [
+        "romantic",
+        "emotional"
+      ],
+      "description": "Two teenagers who mysteriously swap bodies try to find each other across distance and time.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Your_Name_poster.png/330px-Your_Name_poster.png"
+    },
+    {
+      "id": "m12",
+      "title": "Parasite",
+      "genres": [
+        "Thriller",
+        "Drama",
+        "Comedy"
+      ],
+      "language": "Korean",
+      "year": 2019,
+      "duration": 132,
+      "moods": [
+        "suspenseful",
+        "thoughtful"
+      ],
+      "description": "A poor family schemes its way into the lives of a wealthy household, with unexpected results.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Parasite_%282019_film%29.png/330px-Parasite_%282019_film%29.png"
+    },
+    {
+      "id": "m13",
+      "title": "Train to Busan",
+      "genres": [
+        "Horror",
+        "Action",
+        "Thriller"
+      ],
+      "language": "Korean",
+      "year": 2016,
+      "duration": 118,
+      "moods": [
+        "scary",
+        "exciting"
+      ],
+      "description": "Passengers on a speeding train fight to survive a zombie outbreak.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Train_to_Busan.jpg/330px-Train_to_Busan.jpg"
+    },
+    {
+      "id": "m14",
+      "title": "Oldboy",
+      "genres": [
+        "Mystery",
+        "Thriller",
+        "Action"
+      ],
+      "language": "Korean",
+      "year": 2003,
+      "duration": 120,
+      "moods": [
+        "suspenseful",
+        "scary"
+      ],
+      "description": "A man freed after fifteen years of mysterious imprisonment hunts for the reason why.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Oldboykoreanposter.jpg/330px-Oldboykoreanposter.jpg"
+    },
+    {
+      "id": "m15",
+      "title": "3 Idiots",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "language": "Hindi",
+      "year": 2009,
+      "duration": 171,
+      "moods": [
+        "happy",
+        "emotional",
+        "thoughtful"
+      ],
+      "description": "Two friends look back on their engineering-college days with a free-thinking classmate.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/d/df/3_idiots_poster.jpg/330px-3_idiots_poster.jpg"
+    },
+    {
+      "id": "m16",
+      "title": "Dangal",
+      "genres": [
+        "Drama"
+      ],
+      "language": "Hindi",
+      "year": 2016,
+      "duration": 161,
+      "moods": [
+        "emotional",
+        "exciting"
+      ],
+      "description": "A former wrestler trains his daughters to become world-class champions.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/9/99/Dangal_Poster.jpg/330px-Dangal_Poster.jpg"
+    },
+    {
+      "id": "m17",
+      "title": "Lagaan",
+      "genres": [
+        "Drama",
+        "Adventure"
+      ],
+      "language": "Hindi",
+      "year": 2001,
+      "duration": 233,
+      "moods": [
+        "exciting",
+        "emotional"
+      ],
+      "description": "Villagers in colonial India take on their British rulers in a cricket match to escape heavy taxes.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b6/Lagaan.jpg/330px-Lagaan.jpg"
+    },
+    {
+      "id": "m18",
+      "title": "Dilwale Dulhania Le Jayenge",
+      "genres": [
+        "Romance",
+        "Drama",
+        "Comedy"
+      ],
+      "language": "Hindi",
+      "year": 1995,
+      "duration": 189,
+      "moods": [
+        "romantic",
+        "happy"
+      ],
+      "description": "Two young Indians fall in love on a trip across Europe, but family tradition stands in their way.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Dilwale_Dulhania_Le_Jayenge_poster.jpg/330px-Dilwale_Dulhania_Le_Jayenge_poster.jpg"
+    },
+    {
+      "id": "m19",
+      "title": "Zindagi Na Milegi Dobara",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Adventure"
+      ],
+      "language": "Hindi",
+      "year": 2011,
+      "duration": 154,
+      "moods": [
+        "happy",
+        "emotional",
+        "exciting"
+      ],
+      "description": "Three friends take a bachelor road trip across Spain and rediscover what matters to them.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Zindagi_Na_Milegi_Dobara.jpg/330px-Zindagi_Na_Milegi_Dobara.jpg"
+    },
+    {
+      "id": "m20",
+      "title": "Andhadhun",
+      "genres": [
+        "Thriller",
+        "Mystery",
+        "Comedy"
+      ],
+      "language": "Hindi",
+      "year": 2018,
+      "duration": 138,
+      "moods": [
+        "suspenseful"
+      ],
+      "description": "A pianist who pretends to be blind gets tangled in a murder.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Andhadhun_poster.jpg/330px-Andhadhun_poster.jpg"
+    },
+    {
+      "id": "m21",
+      "title": "Drishyam",
+      "genres": [
+        "Thriller",
+        "Mystery",
+        "Drama"
+      ],
+      "language": "Hindi",
+      "year": 2015,
+      "duration": 163,
+      "moods": [
+        "suspenseful",
+        "thoughtful"
+      ],
+      "description": "A father goes to extreme lengths to protect his family after a crime.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/Drishyam_2015_film.jpg/330px-Drishyam_2015_film.jpg"
+    },
+    {
+      "id": "m22",
+      "title": "Sholay",
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "language": "Hindi",
+      "year": 1975,
+      "duration": 204,
+      "moods": [
+        "exciting"
+      ],
+      "description": "A retired police officer hires two petty criminals to capture a feared bandit.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/5/52/Sholay-poster.jpg/330px-Sholay-poster.jpg"
+    },
+    {
+      "id": "m23",
+      "title": "Taare Zameen Par",
+      "genres": [
+        "Drama"
+      ],
+      "language": "Hindi",
+      "year": 2007,
+      "duration": 164,
+      "moods": [
+        "emotional",
+        "thoughtful"
+      ],
+      "description": "A caring art teacher helps a struggling child discover his hidden talent.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Taare_Zameen_Par_Like_Stars_on_Earth_poster.png/330px-Taare_Zameen_Par_Like_Stars_on_Earth_poster.png"
+    },
+    {
+      "id": "m24",
+      "title": "Sairat",
+      "genres": [
+        "Romance",
+        "Drama"
+      ],
+      "language": "Marathi",
+      "year": 2016,
+      "duration": 174,
+      "moods": [
+        "romantic",
+        "emotional"
+      ],
+      "description": "A love story across caste and class lines in rural Maharashtra.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a1/Sairat_Marathi_Film_Poster.jpg/330px-Sairat_Marathi_Film_Poster.jpg"
+    },
+    {
+      "id": "m25",
+      "title": "Court",
+      "genres": [
+        "Drama"
+      ],
+      "language": "Marathi",
+      "year": 2014,
+      "duration": 116,
+      "moods": [
+        "thoughtful"
+      ],
+      "description": "A folk singer is put on trial in a slow-moving Mumbai courtroom.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Court_%28film%29_POSTER.jpg/330px-Court_%28film%29_POSTER.jpg"
+    },
+    {
+      "id": "m26",
+      "title": "Fandry",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "language": "Marathi",
+      "year": 2013,
+      "duration": 104,
+      "moods": [
+        "emotional",
+        "thoughtful"
+      ],
+      "description": "A teenage boy from a marginalised community dreams of winning the heart of a classmate.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Nagraj_Manjule_Film_Poster_Fandry.jpg/330px-Nagraj_Manjule_Film_Poster_Fandry.jpg"
+    },
+    {
+      "id": "m27",
+      "title": "Spider-Man: Into the Spider-Verse",
+      "genres": [
+        "Animation",
+        "Action",
+        "Adventure"
+      ],
+      "language": "English",
+      "year": 2018,
+      "duration": 117,
+      "moods": [
+        "exciting",
+        "happy"
+      ],
+      "description": "Teenager Miles Morales meets Spider-People from other dimensions.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Spider-Man_Into_the_Spider-Verse_poster.png/330px-Spider-Man_Into_the_Spider-Verse_poster.png"
+    },
+    {
+      "id": "m28",
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "genres": [
+        "Fantasy",
+        "Adventure"
+      ],
+      "language": "English",
+      "year": 2001,
+      "duration": 178,
+      "moods": [
+        "exciting"
+      ],
+      "description": "A hobbit and eight companions set out to destroy a ring of unimaginable power.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Lord_Rings_Fellowship_Ring.jpg/330px-Lord_Rings_Fellowship_Ring.jpg"
+    },
+    {
+      "id": "m29",
+      "title": "Pan's Labyrinth",
+      "genres": [
+        "Fantasy",
+        "Drama",
+        "Horror"
+      ],
+      "language": "Spanish",
+      "year": 2006,
+      "duration": 120,
+      "moods": [
+        "scary",
+        "thoughtful"
+      ],
+      "description": "In 1944 Spain, a girl discovers a mysterious labyrinth and a faun who sets her three tasks.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Pan%27s_Labyrinth.jpg/330px-Pan%27s_Labyrinth.jpg"
+    },
+    {
+      "id": "m30",
+      "title": "Get Out",
+      "genres": [
+        "Horror",
+        "Thriller",
+        "Mystery"
+      ],
+      "language": "English",
+      "year": 2017,
+      "duration": 104,
+      "moods": [
+        "scary",
+        "suspenseful"
+      ],
+      "description": "A young man visits his girlfriend's family and uncovers a disturbing secret.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a3/Get_Out_poster.png/330px-Get_Out_poster.png"
+    },
+    {
+      "id": "m31",
+      "title": "The Conjuring",
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "language": "English",
+      "year": 2013,
+      "duration": 112,
+      "moods": [
+        "scary"
+      ],
+      "description": "Paranormal investigators help a family terrorised by a dark presence in their farmhouse.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/The_Conjuring_poster.jpg/330px-The_Conjuring_poster.jpg"
+    },
+    {
+      "id": "m32",
+      "title": "A Quiet Place",
+      "genres": [
+        "Horror",
+        "Thriller",
+        "Science Fiction"
+      ],
+      "language": "English",
+      "year": 2018,
+      "duration": 90,
+      "moods": [
+        "scary",
+        "suspenseful"
+      ],
+      "description": "A family must live in silence to hide from creatures that hunt by sound.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a0/A_Quiet_Place_film_poster.png/330px-A_Quiet_Place_film_poster.png"
+    },
+    {
+      "id": "m33",
+      "title": "Knives Out",
+      "genres": [
+        "Mystery",
+        "Comedy"
+      ],
+      "language": "English",
+      "year": 2019,
+      "duration": 130,
+      "moods": [
+        "suspenseful",
+        "happy"
+      ],
+      "description": "A detective investigates the death of a famous crime novelist and his scheming family.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Knives_Out_poster.jpeg/330px-Knives_Out_poster.jpeg"
+    },
+    {
+      "id": "m34",
+      "title": "Se7en",
+      "genres": [
+        "Mystery",
+        "Thriller"
+      ],
+      "language": "English",
+      "year": 1995,
+      "duration": 127,
+      "moods": [
+        "suspenseful",
+        "scary"
+      ],
+      "description": "Two detectives track a serial killer who bases his crimes on the seven deadly sins.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/6/68/Seven_%28movie%29_poster.jpg/330px-Seven_%28movie%29_poster.jpg"
+    },
+    {
+      "id": "m35",
+      "title": "The Notebook",
+      "genres": [
+        "Romance",
+        "Drama"
+      ],
+      "language": "English",
+      "year": 2004,
+      "duration": 123,
+      "moods": [
+        "romantic",
+        "emotional"
+      ],
+      "description": "A man reads a love story from an old notebook to a woman with dementia.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Posternotebook.jpg/330px-Posternotebook.jpg"
+    },
+    {
+      "id": "m36",
+      "title": "La La Land",
+      "genres": [
+        "Romance",
+        "Drama",
+        "Comedy"
+      ],
+      "language": "English",
+      "year": 2016,
+      "duration": 128,
+      "moods": [
+        "romantic",
+        "emotional"
+      ],
+      "description": "A jazz pianist and an aspiring actress pursue their dreams and love in Los Angeles.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/a/ab/La_La_Land_%28film%29.png/330px-La_La_Land_%28film%29.png"
+    },
+    {
+      "id": "m37",
+      "title": "Titanic",
+      "genres": [
+        "Romance",
+        "Drama"
+      ],
+      "language": "English",
+      "year": 1997,
+      "duration": 195,
+      "moods": [
+        "romantic",
+        "emotional"
+      ],
+      "description": "A young couple from different classes fall in love aboard the doomed ocean liner.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/1/18/Titanic_%281997_film%29_poster.png/330px-Titanic_%281997_film%29_poster.png"
+    },
+    {
+      "id": "m38",
+      "title": "Casablanca",
+      "genres": [
+        "Romance",
+        "Drama"
+      ],
+      "language": "English",
+      "year": 1942,
+      "duration": 102,
+      "moods": [
+        "romantic",
+        "emotional"
+      ],
+      "description": "A cynical club owner in wartime Morocco must choose between love and doing the right thing.",
+      "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/CasablancaPoster-Gold.jpg/330px-CasablancaPoster-Gold.jpg"
+    },
+    {
+      "id": "m39",
+      "title": "The Grand Budapest Hotel",
+      "genres": [
+        "Comedy",
+        "Adventure"
+      ],
+      "language": "English",
+      "year": 2014,
+      "duration": 100,
+      "moods": [
+        "happy"
+      ],
+      "description": "A legendary concierge and his lobby boy get caught up in a stolen painting and a family fortune.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/The_Grand_Budapest_Hotel.png/330px-The_Grand_Budapest_Hotel.png"
+    },
+    {
+      "id": "m40",
+      "title": "Home Alone",
+      "genres": [
+        "Comedy",
+        "Adventure"
+      ],
+      "language": "English",
+      "year": 1990,
+      "duration": 103,
+      "moods": [
+        "happy"
+      ],
+      "description": "A boy accidentally left behind at Christmas defends his house from two burglars.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Home_alone_poster.jpg/330px-Home_alone_poster.jpg"
+    },
+    {
+      "id": "m41",
+      "title": "Back to the Future",
+      "genres": [
+        "Science Fiction",
+        "Comedy",
+        "Adventure"
+      ],
+      "language": "English",
+      "year": 1985,
+      "duration": 116,
+      "moods": [
+        "happy",
+        "exciting"
+      ],
+      "description": "A teenager is sent thirty years into the past in a time-travelling car.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Back_to_the_Future.jpg/330px-Back_to_the_Future.jpg"
+    },
+    {
+      "id": "m42",
+      "title": "Psycho",
+      "genres": [
+        "Horror",
+        "Thriller",
+        "Mystery"
+      ],
+      "language": "English",
+      "year": 1960,
+      "duration": 109,
+      "moods": [
+        "scary",
+        "suspenseful"
+      ],
+      "description": "A woman on the run stops at an isolated motel run by a shy young man.",
+      "poster": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Psycho_%281960%29_theatrical_poster_%28retouched%29.jpg/330px-Psycho_%281960%29_theatrical_poster_%28retouched%29.jpg"
+    },
+    {
+      "id": "m43",
+      "title": "Free Solo",
+      "genres": [
+        "Documentary",
+        "Adventure"
+      ],
+      "language": "English",
+      "year": 2018,
+      "duration": 100,
+      "moods": [
+        "exciting",
+        "thoughtful"
+      ],
+      "description": "Alex Honnold attempts to climb El Capitan without ropes.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Free_Solo.png/330px-Free_Solo.png"
+    },
+    {
+      "id": "m44",
+      "title": "My Octopus Teacher",
+      "genres": [
+        "Documentary"
+      ],
+      "language": "English",
+      "year": 2020,
+      "duration": 85,
+      "moods": [
+        "emotional",
+        "thoughtful"
+      ],
+      "description": "A filmmaker forms an unusual bond with a wild octopus over a year.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/0/06/My_Octopus_Teacher_poster.jpg/330px-My_Octopus_Teacher_poster.jpg"
+    },
+    {
+      "id": "m45",
+      "title": "Dune",
+      "genres": [
+        "Science Fiction",
+        "Adventure",
+        "Drama"
+      ],
+      "language": "English",
+      "year": 2021,
+      "duration": 155,
+      "moods": [
+        "exciting",
+        "thoughtful"
+      ],
+      "description": "A noble family takes control of the desert planet Arrakis, the only source of a priceless spice.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Dune_%282021_film%29.jpg/330px-Dune_%282021_film%29.jpg"
+    },
+    {
+      "id": "m46",
+      "title": "Everything Everywhere All at Once",
+      "genres": [
+        "Science Fiction",
+        "Comedy",
+        "Action"
+      ],
+      "language": "English",
+      "year": 2022,
+      "duration": 139,
+      "moods": [
+        "thoughtful",
+        "happy",
+        "emotional"
+      ],
+      "description": "A laundromat owner is swept into a multiverse adventure to save everything.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1e/Everything_Everywhere_All_at_Once.jpg/330px-Everything_Everywhere_All_at_Once.jpg"
+    },
+    {
+      "id": "m47",
+      "title": "Coco",
+      "genres": [
+        "Animation",
+        "Fantasy",
+        "Adventure"
+      ],
+      "language": "English",
+      "year": 2017,
+      "duration": 105,
+      "moods": [
+        "emotional",
+        "happy"
+      ],
+      "description": "A boy who dreams of being a musician enters the Land of the Dead to uncover his family's history.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Coco_%282017_film%29_poster.jpg/330px-Coco_%282017_film%29_poster.jpg"
+    },
+    {
+      "id": "m48",
+      "title": "Up",
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Comedy"
+      ],
+      "language": "English",
+      "year": 2009,
+      "duration": 96,
+      "moods": [
+        "emotional",
+        "happy"
+      ],
+      "description": "An elderly widower ties thousands of balloons to his house and flies to South America.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Up_%282009_film%29.jpg/330px-Up_%282009_film%29.jpg"
+    }
+  ]
+}
